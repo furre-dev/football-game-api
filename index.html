@@ -1,17 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-    <title>Football</title>
-</head>
+    <title>Super Lig</title>
+  </head>
 
-<body>
-
-</body>
-
+  <body>
+    <h1>Remaining matches for Spor Toto Super Lig this week!</h1>
+    <main class="card-container">
+      <div class="card">
+        <div class="live">00:00</div>
+        <div class="card-upper-portion">
+          <div class="team-logo-and-name">
+            <img
+              class="homeTeamImage teamImage"
+              src="https://media.api-sports.io/football/teams/611.png"
+            />
+            <h2 class="home-team-name team-name-h2">Galatasaray</h2>
+          </div>
+          <div class="mid-rect"></div>
+          <div class="team-logo-and-name">
+            <img
+              class="awayTeamImage teamImage"
+              src="https://media.api-sports.io/football/teams/549.png"
+            />
+            <h2 class="away-team-name team-name-h2">Besiktas</h2>
+          </div>
+        </div>
+        <div class="card-lower-portion">
+          <section class="score-section">
+            <h3 class="score-h3 score">
+              <span class="homeScore">0</span
+              ><span class="vertical-align">:</span
+              ><span class="awayScore">0</span>
+            </h3>
+          </section>
+          <div class="lower-information">
+            <div class="rectangles-container">
+              <div class="left-rect"></div>
+              <div class="date-and-time">
+                <p class="match-time">18.00</p>
+                <p class="date">2022-05-05</p>
+              </div>
+              <div class="right-rect"></div>
+            </div>
+            <div class="end-div">
+              <div class="referee-div">
+                <img class="referee-image" src="./sources/referee.png" />
+                <p class="referee">Ali Palabiyik</p>
+              </div>
+              <div class="league-div">
+                <img
+                  class="league-image"
+                  src="https://media.api-sports.io/football/leagues/203.png"
+                />
+              </div>
+              <div class="stadium-div">
+                <img class="stadium-image" src="./sources/team-stadium.png" />
+                <p class="stadium">Ulker Stadium</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

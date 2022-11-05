@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    background:white;
+
+    font-family: "Roboto";
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+
+    padding: 5rem;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+
+    flex-wrap: wrap;
+}
+
+.card {
+    scale: 1;
+    position: relative;
+
+    width: 33rem;
+    height: 40rem;
+
+    background: rgb(11, 47, 77);
+    box-shadow: 20px 10px 30px 10px rgba(0, 0, 0, .3) inset;
+                
+
+    border-top-left-radius:.5rem ;
+    border-top-right-radius:.5rem ;
+    
+    border-bottom-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+
+    overflow: hidden;
+}
+
+.live {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    background: white;
+
+    color: black;
+
+    padding: 0.3rem .7rem;
+
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    transform: translateX(-50%);
+}
+.live.is-not-live {
+    opacity: 0;
+}
+
+.card-upper-portion {
+    height: 36%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.team-logo-and-name {
+    padding-top: 3rem;
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+    align-items: center;
+    justify-content: center;
+    
+    width: 35%;
+    max-width: 35%;
+    height: 100%;
+}
+
+.team-name-h2 {
+    padding-top: 1em;
+    font-weight: 100;
+    word-wrap: break-word;
+    text-align: center;
+
+    font-size: 1.5rem;
+}
+
+.home-team-name,
+.away-team-name {
+    color: #ffffff;
+    text-align: center;
+}
+
+.mid-rect {
+    width: 5px;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 1rem;
+}
+
+.teamImage {
+    box-sizing: border-box;
+
+
+    padding: 1rem;
+
+    width: 9rem;
+    aspect-ratio: 1/1;
+}
+
+.card-lower-portion {
+    padding-top: 0rem;
+
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.score-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+
+    padding-top: 1.2rem;
+
+    max-height: 60%;
+}
+
+.score {
+    font-weight: 100;
+
+    color: white;
+    display: flex;
+    gap: 4rem;
+}
+
+.vertical-align{
+    vertical-align: middle;
+    font-size: 10rem;
+}
+
+.lower-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 69%;
+
+    background: linear-gradient(180deg, rgba(11,47,77,1) 0%, rgb(61, 138, 132) 100%);
+    box-shadow: 19px -50px 29px 9px rgba(0,0,0,0.3) inset;
+}
+
+.date-and-time {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    color: white;
+}.match-time{
+    font-size: 4rem;
+    max-height: 3.8rem;
+}.date{
+    font-size: 1.9rem;
+}
+.rectangles-container {
+    position: relative;
+    width: 33rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 30%;
+}
+
+.left-rect {
+    left: -2px;
+    position: absolute;
+    height: 5px;
+    width: 32%;
+    background: white;
+    border-radius: 1rem;
+}.right-rect {
+    right: -2px;
+    position: absolute;
+    height: 5px;
+    width: 32%;
+    background: white;
+    border-radius: 1rem;
+}
+
+.end-div {
+    padding-top: 0rem;
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+
+    color: white;
+}
+
+.referee-div,
+.stadium-div,
+.league-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    
+    width: 33%;
+}
+
+.league-image {
+    padding-top: 1.5rem;
+    width: 6rem;
+}
+
+.referee-image {
+    width: 4rem;
+}
+.stadium-image {
+    width: 6rem;
+}
+
+.referee,
+.stadium {
+    padding-top: .3rem;
+}
+
+.referee {
+    max-width: 8rem;
+}
